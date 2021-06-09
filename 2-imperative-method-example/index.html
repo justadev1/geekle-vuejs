@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Imperative method</title>
+    <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.js"></script>
+</head>
+
+<script>
+    let app;
+
+    const vueMfe = { template: '<p>Vue.js micro-frontend!</p>' };
+
+    function init() {
+        app = Vue.createApp(vueMfe)
+        const el = document.getElementById("micro-frontend")
+        app.mount(el)
+    }
+
+    function destroy() {
+        app.unmount(el)
+    }
+</script>
+
+<body onLoad="init()" onunload="destroy()">
+    <div id="container">
+        Container APP
+        <div id="micro-frontend" />
+        <div id="micro-frontend" />
+    </div>
+</body>
+
+</html>

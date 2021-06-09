@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiple frameworks example</title>
+    <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js"></script>
+</head>
+
+<script>
+    const vueMfe = { template: '<p>Vue.js micro-frontend!</p>' };
+
+    class Mfe extends HTMLElement {
+        constructor() {
+            super()
+            this.app = Vue.createApp(vueMfe)
+        }
+
+        connectedCallback() {
+            this.app.mount(this);
+        }
+
+        disconnectCallback() {
+            this.app.unmount(this);
+        }
+    }
+    window.customElements.define('vue-js', Mfe);
+</script>
+<body>
+    <div ng-app="">
+        Angular Container App
+        <input type="text" ng-model="name" />
+        <p>Hello {{name}}</p>
+        <vue-js />
+        <vue-js />
+        <vue-js />
+        <vue-js />
+    </div>
+</body>
+</html>

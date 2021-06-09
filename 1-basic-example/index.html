@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Example</title>
+    <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.js"></script>
+</head>
+<script>
+    const vueMfe = { template: '<p>Vue.js micro-frontend!</p>' };
+
+    class Mfe extends HTMLElement {
+        constructor() {
+            super()
+            this.app = Vue.createApp(vueMfe);
+        }
+        connectedCallback() {
+            this.app.mount(this);
+        }
+        disconnectCallback() {
+            this.app.unmount(this);
+        }
+    }
+    window.customElements.define('micro-frontend', Mfe);
+</script>
+<body>
+    <div id="container">
+        Container APP
+        <micro-frontend ></micro-frontend>
+        <micro-frontend></micro-frontend>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html><html><head><script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js"></script><script src="https://unpkg.com/vue@next"></script><link rel="stylesheet" href="https://unpkg.com/element-plus/lib/theme-chalk/index.css"><script src="https://unpkg.com/element-plus/lib/index.full.js"></script><script src="common-lib/dist/index_bundle.js" async defer="defer"></script><script src="http://localhost:8080/product-basket.js" async defer="defer"></script></head><style>.main {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .left {
+            flex: auto;
+            overflow: auto;
+        }
+        .right {
+            width: 40%;
+            min-width: 300px;
+        }
+
+        .header {
+            font-family: Avenir, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #2c3e50;
+        }</style><body><header class="header"><h1>Some fancy title here</h1></header><div ng-app="" class="main"><search-product class="left"></search-product><product-basket class="right"></product-basket></div><script src="http://localhost:3000/main.js"></script></body></html>
