@@ -4,7 +4,8 @@ A set of examples used at the [Vue Global Summit by Geekle](https://geekle.us/vu
 
 See ppt presentation for details.
 
-##Folders
+## Folders
+
 Each folder contains a different example.
 
 In details:
