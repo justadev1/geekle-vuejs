@@ -10,11 +10,11 @@ Each folder contains a different example.
 
 In details:
 
-- 1-basic-example: a simple example of a container app with 2 instances of the same micro-frontend. This method uses custom-elements to mount/unmount the micro-frontend. Open with a simple double click. To open, just double click on the index.html
+- 1-basic-example: a simple example of a container app with 2 instances of the same micro-frontend. This method uses custom-elements to mount/unmount the micro-frontend. To open, just double click on the index.html
 
-- 2-imperative-method-example: another way to create micro-frontends with vuejs. This method programmatically injects the micro-frontend in a dedicated div. To open, just double click on the index.html
+- 2-imperative-method-example: another way to create micro-frontends with Vue.js. This method programmatically injects the micro-frontend in a dedicated div. To open, just double click on the index.html
 
-- 3-multiple-framework-example: an example of how a vuejs micro-frontend and angular app can run on the same page. To open, just double click on the index.html
+- 3-multiple-framework-example: an example of how a Vue.js micro-frontend and angular app can run on the same page. To open, just double click on the index.html
 
 - 4-vue-3.0-example: an example of a Vue.js microfrontend imported into a container app. To run:
 
