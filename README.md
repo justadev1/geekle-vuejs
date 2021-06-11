@@ -1,6 +1,6 @@
 # Geele-vuejs
 
-A set of examples used at the [Vue Global Summit by Geekle](https://geekle.us/vue) to show how to build micro-frontends in Bue.js
+A set of examples used at the [Vue Global Summit by Geekle](https://geekle.us/vue) to show how to build micro-frontends in Vue.js
 
 See ppt presentation for details.
 
