@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+        <script src="http://localhost:3000/node_modules/hello-world/hello-world.umd.js"></script>
+        <script src="http://localhost:3000/node_modules/wassup-world/wassup-world.umd.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <nav>
+                <router-link to="/page-1">Go to Page 1</router-link>
+                <router-link to="/page-2">Go to Page 2</router-link>
+            </nav>
+            <router-view></router-view>
+        </div>
+    </body>
+
+    <script>
+        const Page1 = { template: `
+            <div>
+                <hello-world></hello-world>
+            </div>
+        `}
+        const Page2 = { template: `
+        <div>
+            <wassup-world></wassup-world>
+        </div>
+        `}
+
+        const routes = [
+            { path: '/page-1', component: Page1 },
+            { path: '/page-2', component: Page2 }
+        ]
+
+        const router = new VueRouter({ routes })
+
+        const app = new Vue({ router }).$mount('#app')
+    </script>
+</html>

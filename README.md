@@ -19,11 +19,22 @@ In details:
 - 4-vue-3.0-example: an example of a Vue.js microfrontend imported into a container app. To run:
 
   - `npm install` in hello-world
+  - `npm run build` in hello-world
   - `npm install` in cdn
   - `npm install` in main-app
   - `npm start` in main-app
 
-- 5-webpack-5-example: an example of how to build micro-frontends in Vue.js and Webpack5. To run:
+- 5-mfe-routing-example: an example of how to build micro-frontends in Vue.js and Webpack5. To run:
+
+  - `npm install` in hello-world
+  - `npm run build` in hello-world
+  - `npm install` in wassup-world
+  - `npm run build` in wassup-world
+  - `npm install` in cdn
+  - `npm install` in main-app
+  - `npm start` in main-app
+
+- 6-webpack-5-example: an example of how to build micro-frontends in Vue.js and Webpack5. To run:
   - `npm install` in hello-world
   - `npm install` in cdn
   - `npm install` in main-app
